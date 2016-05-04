@@ -1,0 +1,254 @@
+/* INFORMATION
+	- Author:   Dean P.
+	- Contact:  deanpif@gmail.com
+*/
+
+@font-face {
+    font-family: Aleo;
+    src: url(../font/Aleo-Regular.otf);
+}
+
+@font-face {
+    font-family: Aleo Light;
+    src: url(../font/Aleo-Light.otf);
+}
+
+@font-face {
+    font-family: Aleo Bold;
+    src: url(../font/Aleo-Bold.otf);
+}
+
+@font-face {
+    font-family: Negra;
+	src: url('../font/WCManoNegraBta.otf');
+}
+
+@import 'include/_reset.scss';
+@import 'theme/_header.scss';
+@import 'theme/_footer.scss';
+
+body {
+	font-family: 'Aleo';
+}
+
+.main {
+	&__hero {
+		padding: 215px 0;
+		text-align: center;
+		background: linear-gradient( rgba(31, 31, 31, 0.75) , rgba(31, 31, 31, 0.75) ), url(../images/main_background.png);
+		background-size: cover;
+		background-position: center;
+		h2 {
+			font-family: 'Negra';
+			font-size: 100px;
+			color: #fff;
+		}
+		p {
+			font-size: 16px;
+			display: inline-block;
+			color: #fff;
+			position: relative;
+			&:before, &:after {
+				content: ' ';
+				position: absolute;
+				display: inline-block;
+				background-color: #fff;
+				width: 40px;
+				top: 12px;
+				left: -60px;
+				height: 1px;
+			}
+			&:after {
+				left: 340px;
+			}
+		}
+	}
+	&__menu {
+		border-top: 4px solid #f34949;
+		text-align: center;
+		font-size: 0;
+		padding: 0 10%;
+		> p {
+			color: #fff;
+			padding: 22px 25px 33px;
+			background-color: #f34949;
+			font-weight: bold;
+			font-size: 20px;
+			display: inline-block;
+			margin-bottom: 50px;
+			position: relative;
+			overflow: hidden;
+			&:before, &:after {
+				content: ' ';
+				background-color: #fff;
+				width: 100px;
+				transform: rotate(-10deg);
+				top: 72px;
+				left: -25px;
+				height: 50px;
+				position: absolute;
+			}
+			&:after {
+				transform: rotate(10deg);
+				left: 65px;
+			}
+		}
+		> button {
+			display: block;
+			-webkit-appearance: none;
+			background-color: transparent;
+			border: none;
+			margin: 60px auto 200px auto;
+			text-align: left;
+			padding: 7px 15px;
+			border: 1px solid #d7d5d5;
+			p {
+				border-right: 1px solid #d7d5d5;
+				display: inline-block;
+				margin-right: 10px;
+				padding-right: 10px;
+				font-size: 14px;
+				vertical-align: middle;
+				color: #b7b7b7;
+				font-family: 'Aleo Light';
+				
+			}
+			span {
+				position: relative;
+				display: inline-block;
+				width: 11px;
+				height: 1px;
+				vertical-align: middle;
+				&:before, &:after {
+					content: ' ';
+					position: absolute;
+					display: inline-block;
+					transform: rotate(45deg);
+					width: 8px;
+					height: 2px;
+					background-color: #c7c7c7;
+				}
+				&:after {
+					transform: rotate(-45deg);
+					right: -1px;
+				}
+			}
+		}
+		&__item {
+			font-size: 0;
+			display: inline-block;
+			width: 50%;
+			text-align: left;
+			padding: 30px 0;
+			&__name {
+				display: inline-block;
+				width: 40%;
+				font-size: 16px;
+				vertical-align: middle;
+				h4 {
+					color: #555555;
+					margin-bottom: 5px;
+				}
+				p {
+					font-size: 12px;
+					color: #b7b7b7;
+					font-family: 'Aleo Light';
+				}
+			}
+			&__line {
+				display: inline-block;
+				width: 30%;
+				height: 1px;
+				margin: 0 5%;
+				background-color: #c9c9c9;
+				vertical-align: middle;
+			}
+			&__price {
+				display: inline-block;
+				font-size: 16px;
+				width: 20%;
+				vertical-align: middle;
+				color: #555;
+			}
+		}
+	}
+	&__featured {
+		font-size: 0;
+		padding: 0 10%;
+		> div {
+			display: inline-block;
+			width: 21.2%;
+			margin-right: 5%;
+			vertical-align: top;
+			font-size: 16px;
+			div:first-child {
+				margin-bottom: 25px;
+				width: 100%;
+				height: 210px;
+				overflow: hidden;
+				position: relative;
+				img {
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			p {
+				position: relative;
+				color: #555555;
+				margin-bottom: 10px;
+				font-family: 'Aleo Light';
+				span {
+					position: absolute;
+					right: 0;
+				}
+			}
+			div span {
+				color: #dedede;
+				&.active {
+					color: #f1df1a;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&__gallery {
+		padding: 200px 10%;
+		h3 {
+			font-size: 22px;
+			color: #3b3b3b;
+			font-family: 'Aleo Bold';
+			display: block;
+			margin-bottom: 80px;
+		}
+		&__list {
+			display: table;
+			font-size: 0;
+			&__big {
+				display: table-cell;
+				width: 33.33%;
+				overflow: hidden;
+				vertical-align: top;
+				img {
+					width: 100%;
+				}
+			}
+			&__dual {
+				display: table-cell;
+				width: 33.33%;
+				overflow: hidden;
+				vertical-align: top;
+				div {
+					height: 50%;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

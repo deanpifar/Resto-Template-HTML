@@ -1,0 +1,44 @@
+.footer {
+	padding: 100px 10%;
+	background-color: #3b3b3b;
+	font-size: 0;
+	div {
+		display: inline-block;
+		width: 25%;
+		font-size: 14px;
+		line-height: 27px;
+		img {
+			margin-bottom: 10px;
+		}
+		h5 {
+			color: #fff;
+			font-size: 16px;
+		}
+		a {
+			font-size: 16px;
+			text-decoration: none;
+			color: #fff;
+			&:hover {
+				color: #F34949;
+			}
+		}
+		p {
+			color: #ebebeb;
+			font-size: 16px;
+			font-family: 'Aleo Light';
+		}
+		span {
+			color: #ebebeb;
+			font-size: 16px;
+		}
+		&:last-child {
+			p {
+				font-size: 14px;
+			}
+			a {
+				font-weight: bold;
+				font-size: 14px;
+			}
+		}
+	}
+}

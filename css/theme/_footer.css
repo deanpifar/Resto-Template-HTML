@@ -1,0 +1,11 @@
+.footer {
+  padding: 100px 10%;
+  background-color: #3b3b3b;
+  font-size: 0;
+}
+
+.footer div {
+  display: inline-block;
+  width: 20%;
+  font-size: 14px;
+}

@@ -1,0 +1,31 @@
+.header {
+	padding: 40px 10%;
+	font-size: 0;
+	background-color: #fff;
+	&__logo {
+		display: inline-block;
+		width: 30%;
+		vertical-align: middle;
+	}
+	&__nav {
+		display: inline-block;
+		width: 70%;
+		text-align: right;
+		vertical-align: middle;
+		li {
+			margin-right: 50px;
+			display: inline-block;
+			a {
+				color: #3b3b3b;
+				font-size: 14px;
+				text-decoration: none;
+				&:hover {
+					color: #F34949;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
