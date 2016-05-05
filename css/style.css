@@ -2,26 +2,6 @@
 	- Author:   Dean P.
 	- Contact:  deanpif@gmail.com
 */
-@font-face {
-  font-family: Aleo;
-  src: url(../font/Aleo-Regular.otf);
-}
-
-@font-face {
-  font-family: Aleo Light;
-  src: url(../font/Aleo-Light.otf);
-}
-
-@font-face {
-  font-family: Aleo Bold;
-  src: url(../font/Aleo-Bold.otf);
-}
-
-@font-face {
-  font-family: Negra;
-  src: url("../font/WCManoNegraBta.otf");
-}
-
 /* RESET SETTINGS
    ----------------------------- */
 * {
@@ -80,6 +60,26 @@ textarea, input, select {
   border: 0;
 }
 
+@font-face {
+  font-family: Aleo;
+  src: url(../font/Aleo-Regular.otf);
+}
+
+@font-face {
+  font-family: Aleo Light;
+  src: url(../font/Aleo-Light.otf);
+}
+
+@font-face {
+  font-family: Aleo Bold;
+  src: url(../font/Aleo-Bold.otf);
+}
+
+@font-face {
+  font-family: Negra;
+  src: url("../font/WCManoNegraBta.otf");
+}
+
 .header {
   padding: 40px 10%;
   font-size: 0;
@@ -100,7 +100,6 @@ textarea, input, select {
 }
 
 .header__nav li {
-  margin-right: 50px;
   display: inline-block;
 }
 
@@ -108,6 +107,7 @@ textarea, input, select {
   color: #555;
   font-size: 14px;
   text-decoration: none;
+  padding: 10px 25px;
   transition: color 0.5s 0s;
 }
 
@@ -115,8 +115,12 @@ textarea, input, select {
   color: #F34949;
 }
 
-.header__nav li:last-child {
-  margin-right: 0;
+.header__nav li:first-child a {
+  padding: 10px 25px 10px 0;
+}
+
+.header__nav li:last-child a {
+  padding: 10px 0 10px 25px;
 }
 
 .footer {

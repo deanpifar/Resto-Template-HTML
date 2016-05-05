@@ -3,27 +3,9 @@
 	- Contact:  deanpif@gmail.com
 */
 
-@font-face {
-    font-family: Aleo;
-    src: url(../font/Aleo-Regular.otf);
-}
-
-@font-face {
-    font-family: Aleo Light;
-    src: url(../font/Aleo-Light.otf);
-}
-
-@font-face {
-    font-family: Aleo Bold;
-    src: url(../font/Aleo-Bold.otf);
-}
-
-@font-face {
-    font-family: Negra;
-	src: url('../font/WCManoNegraBta.otf');
-}
-
 @import 'include/_reset.scss';
+@import 'include/_fonts.scss';
+
 @import 'theme/_header.scss';
 @import 'theme/_footer.scss';
 

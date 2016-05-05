@@ -13,19 +13,22 @@
 		text-align: right;
 		vertical-align: middle;
 		li {
-			margin-right: 50px;
 			display: inline-block;
 			a {
 				color: #555;
 				font-size: 14px;
 				text-decoration: none;
+				padding: 10px 25px;
 				transition: color 0.5s 0s;
 				&:hover {
 					color: #F34949;
 				}
 			}
-			&:last-child {
-				margin-right: 0;
+			&:first-child a {
+				padding: 10px 25px 10px 0;
+			}
+			&:last-child a {
+				padding: 10px 0 10px 25px;
 			}
 		}
 	}
