@@ -137,17 +137,33 @@ body {
 		&__item {
 			font-size: 0;
 			display: inline-block;
-			width: 50%;
+			width: 45%;
+			margin-right: 5%;
 			text-align: left;
 			padding: 30px 0;
+			&:nth-child(even) {
+				margin-right: 0;
+				margin-left: 5%;
+			}
 			&__name {
 				display: inline-block;
-				width: 40%;
+				width: calc(100% - 37px);
 				font-size: 16px;
 				vertical-align: middle;
 				h4 {
 					color: #555555;
 					margin-bottom: 5px;
+					position: relative;
+					&:after {
+						content: ' ';
+						display: inline-block;
+						position: absolute;
+						width: 45%;
+						left: 45%;
+						top: 50%;
+						height: 1px;
+						background-color: #e3e1e1;
+					}
 				}
 				p {
 					font-size: 12px;
@@ -155,19 +171,11 @@ body {
 					font-family: 'Aleo Light';
 				}
 			}
-			&__line {
-				display: inline-block;
-				width: 30%;
-				height: 1px;
-				margin: 0 5%;
-				background-color: #c9c9c9;
-				vertical-align: middle;
-			}
 			&__price {
 				display: inline-block;
 				font-size: 16px;
-				width: 20%;
-				vertical-align: middle;
+				width: 37px;
+				vertical-align: top;
 				color: #555;
 			}
 		}

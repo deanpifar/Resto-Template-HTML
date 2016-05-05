@@ -301,14 +301,20 @@ body {
 .main__menu__item {
   font-size: 0;
   display: inline-block;
-  width: 50%;
+  width: 45%;
+  margin-right: 5%;
   text-align: left;
   padding: 30px 0;
 }
 
+.main__menu__item:nth-child(even) {
+  margin-right: 0;
+  margin-left: 5%;
+}
+
 .main__menu__item__name {
   display: inline-block;
-  width: 40%;
+  width: calc(100% - 37px);
   font-size: 16px;
   vertical-align: middle;
 }
@@ -316,6 +322,18 @@ body {
 .main__menu__item__name h4 {
   color: #555555;
   margin-bottom: 5px;
+  position: relative;
+}
+
+.main__menu__item__name h4:after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  width: 45%;
+  left: 45%;
+  top: 50%;
+  height: 1px;
+  background-color: #e3e1e1;
 }
 
 .main__menu__item__name p {
@@ -324,20 +342,11 @@ body {
   font-family: 'Aleo Light';
 }
 
-.main__menu__item__line {
-  display: inline-block;
-  width: 30%;
-  height: 1px;
-  margin: 0 5%;
-  background-color: #c9c9c9;
-  vertical-align: middle;
-}
-
 .main__menu__item__price {
   display: inline-block;
   font-size: 16px;
-  width: 20%;
-  vertical-align: middle;
+  width: 37px;
+  vertical-align: top;
   color: #555;
 }
 
