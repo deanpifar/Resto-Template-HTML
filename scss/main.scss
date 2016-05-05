@@ -75,7 +75,7 @@ body {
 			font-weight: bold;
 			font-size: 20px;
 			display: inline-block;
-			margin-bottom: 50px;
+			margin-bottom: 60px;
 			position: relative;
 			overflow: hidden;
 			&:before, &:after {
@@ -93,6 +93,7 @@ body {
 				left: 65px;
 			}
 		}
+		> button:focus { outline: none };
 		> button {
 			display: block;
 			-webkit-appearance: none;
@@ -102,12 +103,14 @@ body {
 			text-align: left;
 			padding: 7px 15px;
 			border: 1px solid #d7d5d5;
+			transition: all 0.5s 0s;
 			p {
 				border-right: 1px solid #d7d5d5;
 				display: inline-block;
 				margin-right: 10px;
 				padding-right: 10px;
 				font-size: 14px;
+				transition: all 0.5s 0s;
 				vertical-align: middle;
 				color: #b7b7b7;
 				font-family: 'Aleo Light';
@@ -126,11 +129,29 @@ body {
 					transform: rotate(45deg);
 					width: 8px;
 					height: 2px;
+					transition: all 0.5s 0s;
 					background-color: #c7c7c7;
 				}
 				&:after {
 					transform: rotate(-45deg);
 					right: -1px;
+				}
+			}
+			&:active {
+				position: relative;
+				top: 1px;
+			}
+			&:hover {
+				border: 1px solid #f34949;
+				background-color: #f34949;
+				p {
+					border-right: 1px solid #fff;
+					color: #fff;
+				}
+				span {
+					&:before, &:after {
+						background-color: #fff;
+					}
 				}
 			}
 		}

@@ -16,9 +16,10 @@
 			margin-right: 50px;
 			display: inline-block;
 			a {
-				color: #3b3b3b;
+				color: #555;
 				font-size: 14px;
 				text-decoration: none;
+				transition: color 0.5s 0s;
 				&:hover {
 					color: #F34949;
 				}

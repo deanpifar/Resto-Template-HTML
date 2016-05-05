@@ -105,9 +105,10 @@ textarea, input, select {
 }
 
 .header__nav li a {
-  color: #3b3b3b;
+  color: #555;
   font-size: 14px;
   text-decoration: none;
+  transition: color 0.5s 0s;
 }
 
 .header__nav li a:hover {
@@ -224,7 +225,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   position: relative;
   overflow: hidden;
 }
@@ -249,6 +250,10 @@ body {
   left: 65px;
 }
 
+.main__menu > button:focus {
+  outline: none;
+}
+
 .main__menu > button {
   display: block;
   -webkit-appearance: none;
@@ -258,6 +263,7 @@ body {
   text-align: left;
   padding: 7px 15px;
   border: 1px solid #d7d5d5;
+  transition: all 0.5s 0s;
 }
 
 .main__menu > button p {
@@ -266,6 +272,7 @@ body {
   margin-right: 10px;
   padding-right: 10px;
   font-size: 14px;
+  transition: all 0.5s 0s;
   vertical-align: middle;
   color: #b7b7b7;
   font-family: 'Aleo Light';
@@ -288,6 +295,7 @@ body {
           transform: rotate(45deg);
   width: 8px;
   height: 2px;
+  transition: all 0.5s 0s;
   background-color: #c7c7c7;
 }
 
@@ -296,6 +304,25 @@ body {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   right: -1px;
+}
+
+.main__menu > button:active {
+  position: relative;
+  top: 1px;
+}
+
+.main__menu > button:hover {
+  border: 1px solid #f34949;
+  background-color: #f34949;
+}
+
+.main__menu > button:hover p {
+  border-right: 1px solid #fff;
+  color: #fff;
+}
+
+.main__menu > button:hover span:before, .main__menu > button:hover span:after {
+  background-color: #fff;
 }
 
 .main__menu__item {
