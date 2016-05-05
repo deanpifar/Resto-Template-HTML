@@ -8,3 +8,4 @@
 * Fixed the restourant menu centering on the page.
 * Navigation easier to click/hover
 * Animation on load more button and navigation on hover
+* Optimized images
