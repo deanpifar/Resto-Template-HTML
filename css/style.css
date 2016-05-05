@@ -314,23 +314,26 @@ body {
 
 .main__menu__item__name {
   display: inline-block;
-  width: calc(100% - 37px);
+  width: calc(95% - 37px);
   font-size: 16px;
   vertical-align: middle;
+  overflow: hidden;
+  margin-right: 5%;
 }
 
 .main__menu__item__name h4 {
   color: #555555;
   margin-bottom: 5px;
   position: relative;
+  display: inline-block;
 }
 
 .main__menu__item__name h4:after {
   content: ' ';
   display: inline-block;
   position: absolute;
-  width: 45%;
-  left: 45%;
+  width: 245%;
+  left: 115%;
   top: 50%;
   height: 1px;
   background-color: #e3e1e1;
